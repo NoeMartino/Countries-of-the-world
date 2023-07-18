@@ -20,13 +20,14 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const saveApiData = require("./src/controllers/getApiData.js");
+const { PORT } = process.env;
 
 // Syncing all the models at once.
 //Cambiar a false para empezar a guardar los post
 conn.sync({ force: false }).then( async () => {
   console.log("DB connected")
   await saveApiData()
-  server.listen(3001, () => {
-    console.log('Server listening at 3001'); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log(`Server listening at ${PORT}`); // eslint-disable-line no-console
   });
 });
