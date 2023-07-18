@@ -27,18 +27,16 @@ const Home = () => {
   }
 
   return (
-    <div className={style.background}>
-      <Nav paged={paged}/>
+    < div className={style.background}>
       {countries.length ? <div>
+        <Nav paged={paged}/>
         <Cards currentCountries={currentCountries}/>
         <Paged currentPage={currentPage}
           countriesPerPage={countriesPerPage}
           countries={countries.length}
           paged={paged} />
         </div>
-      : <div className={style.background}>
-          <img className={style.imageLoading} src={process.env.PUBLIC_URL + "/loader.gif"} alt="Loading"></img>
-        </div>}
+      : <img className={style.imageLoading} src={process.env.PUBLIC_URL + "/loader.gif"} alt="Loading"></img>}
     </div>
   )
 }
