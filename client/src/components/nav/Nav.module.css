@@ -1,0 +1,45 @@
+.nav {
+  width: 100%;
+  height: 350px;
+  background-image: url("../../../public/nav.jpg");
+  background-size: 100%;
+  background-position: 0% 40%;
+}
+
+.navBar {
+  display: flex;
+  background-color: rgba(142, 176, 214, 0.7);
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #4F3737;
+  margin: 10px 10px 10px 25px;
+  background-color: #E0DDDD;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.link:hover {
+  color: white;
+  background-color: #26584f91;
+  border-radius: 10px;
+}
+
+.selectsContainer {
+  display: flex;
+  margin-top: 180px;
+  margin-right: 25px;
+  justify-content: flex-end;
+}
+
+.select {
+  display: inline;
+  border-radius: 5px;
+  padding: 6px;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0px 10px;
+}

@@ -1,0 +1,112 @@
+.title {
+    color: #4d170e;
+    -webkit-text-stroke: 0.7px white;
+    font-size: 40px;
+    margin: 30px 155px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 120px;
+    border-radius: 5px;
+    background-color: #4fc69e7a;
+    padding: 30px;
+}
+
+.imageContainer {
+    display: flex;
+    width: 50%;
+}
+
+.image {
+  min-height: 250px;
+  max-height: 330px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 7px;
+}
+
+.text {
+    font-size: x-large;
+    margin: 8px;
+}
+
+.smallText {
+  font-size: large;
+  margin-left: -30px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0px auto;
+}
+
+.button{
+    padding: 14px;
+    margin: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    background-color: #c64042;
+    color: white;
+    border: 0em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #c64042;
+}
+
+.imageNotFound {
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 540px;
+  border-radius: 14px;
+}
+
+.imageLoading {
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 650px;
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+      font-size: 25px;
+      margin: 20px 40px;
+    }
+    
+    .container {
+      margin: 20px 20px;
+      flex-direction: column;
+    }
+    
+    .imageContainer {
+      width: 100%;
+    }
+    
+    .textContainer {
+      width: 100%;
+    }
+    
+    .text {
+      font-size: medium;
+      margin: 10px;
+    }
+    
+    .button {
+      font-size: small;
+      position: relative;
+    }
+  }
