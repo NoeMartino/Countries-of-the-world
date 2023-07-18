@@ -29,7 +29,8 @@ const Home = () => {
   return (
     <div className={style.background}>
       <Nav paged={paged}/>
-      <Cards currentCountries={currentCountries}/>
+      {countries.length ? <Cards currentCountries={currentCountries}/>
+      : <img className={style.imageLoading} src={process.env.PUBLIC_URL + "/loader.gif"} alt="Loading"></img>}
       <Paged currentPage={currentPage}
         countriesPerPage={countriesPerPage}
         countries={countries.length}
