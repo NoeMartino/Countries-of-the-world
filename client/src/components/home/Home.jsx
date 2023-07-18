@@ -29,12 +29,16 @@ const Home = () => {
   return (
     <div className={style.background}>
       <Nav paged={paged}/>
-      {countries.length ? <Cards currentCountries={currentCountries}/>
-      : <img className={style.imageLoading} src={process.env.PUBLIC_URL + "/loader.gif"} alt="Loading"></img>}
-      <Paged currentPage={currentPage}
-        countriesPerPage={countriesPerPage}
-        countries={countries.length}
-        paged={paged} />
+      {countries.length ? <div>
+        <Cards currentCountries={currentCountries}/>
+        <Paged currentPage={currentPage}
+          countriesPerPage={countriesPerPage}
+          countries={countries.length}
+          paged={paged} />
+        </div>
+      : <div className={style.background}>
+          <img className={style.imageLoading} src={process.env.PUBLIC_URL + "/loader.gif"} alt="Loading"></img>
+        </div>}
     </div>
   )
 }
