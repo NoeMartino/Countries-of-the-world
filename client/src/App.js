@@ -5,8 +5,8 @@ import Form from './components/form/Form';
 import Detail from './components/detail/Detail';
 import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
-//axios.defaults.baseURL = '';
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://countries-of-the-world-o44g.vercel.app/';
+//axios.defaults.baseURL = 'http://localhost:3001';
 
 function App() {
 
