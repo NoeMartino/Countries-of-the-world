@@ -20,7 +20,7 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const saveApiData = require("./src/controllers/getApiData.js");
-const { PORT } = process.env;
+const { PORT } = process.env || 3000;
 
 // Syncing all the models at once.
 //Cambiar a false para empezar a guardar los post
